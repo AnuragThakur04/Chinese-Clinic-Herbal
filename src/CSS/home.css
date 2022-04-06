@@ -322,7 +322,7 @@ header {
 
 .contact_body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/1st.png");
+    url("./src/images/image 5.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
   display: flex;
