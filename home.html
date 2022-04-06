@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./src/CSS/home.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./Hover/hover-min.css">
+    <link rel="stylesheet" href="./Hover/hover.css">
+    <link rel="stylesheet" href="./Hover/imagehover.css">
+    <link rel="stylesheet" href="./Hover/imagehover.min.css">
+    <link rel="stylesheet" href="./Hover/imagehover.css.map">
+    <link rel="stylesheet" href="./cycle/css/cycle.css">
+    <link rel="stylesheet" href="./dist/baguetteBox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://kit.fontawesome.com/3ea5d81ea2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+
+        #gallary_image {
+            max-width: 100%;
+            margin-left: 180px;
+            height: 100%;
+        }
+        
+        .gallery a {
+            width: 240px;
+            height: 180px;
+            display: inline-block;
+            overflow: hidden;
+            margin: 4px 6px;
+            box-shadow: 0 10px 10px 0px rgba(0,0,0,0.4)
+        }
+        .gallery a:hover{
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .sm-hidden {
+                display: none;
+            }
+        }   
+
+        @keyframes animateDown {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(5px);
+            }
+            60%{
+                transform: translateY(3px);
+            }
+        }
+ </style>
+</head>
+<body>
+    <div class="content" id="home">
+
+
+        <!-- HEADER -->
+
+        <div class="header">
+            <header>
+               <div class="header_center">                 
+                   <h2>Chinese Herbal Clinic</h2>
+               </div>
+              
+            </header>
+        </div>
+
+        
+        <!-- PARALLAX -->
+        <div class="parallax">
+            <div class="container wow fadeInLeft" style="z-index: 5;"> 
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="home.html">
+                                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                <span class="title">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <span class="icon"><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                                <span class="title">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <span class="icon"><i class="fa fa-calendar-week"></i></span>
+                                <span class="title">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <span class="icon"><i class="fa  fa-street-view"></i></span>
+                                <span class="title">Directions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gallery">
+                                <span class="icon"><i class="fa fa-images"></i></span>
+                                <span class="title">Gallery</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle"></div>
+            </div>
+            <style>
+                .st1{
+                    width: 100%;
+                    height: 90vh;
+                    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./src/images/image 6.jpg');
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                .st2{
+                    width: 100%;
+                    height: 90vh;
+                    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./src/images/image 3.jpg');
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                .st3{
+                    width: 100%;
+                    height: 90vh;
+                    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./src/images/image 4.jpg');
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                .st4{
+                    width: 100%;
+                    height: 90vh;
+                    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./src/images/image 5.jpg');
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                .st1 h1,.st2 h1, .st3 h1, .st4 h1{
+                    top: 42vh;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                    margin: auto;
+                    width: 40%;
+                    color: white;
+                    font-weight: 500;
+                    font-family: serif;
+                    font-size: 4rem;
+                }
+            </style>
+            <div data-cycle="go" class="cycle slide wow fadeInRight" data-wow-delay="1s">
+                <div class="cycle-inner">
+                    <div class="item st1 active">
+                        <h1>Treatment type 1</h1>
+                    </div>  
+                    <div class="item st2">
+                        <h1>Treatment type 2</h1>
+                    </div>
+                    <div class="item st3">
+                        <h1>Treatment type 3</h1>
+                    </div>
+                    <div class="item st4">
+                        <h1>Treatment type 4</h1> 
+                    </div>
+                </div>
+            </div>
+            <div class="parallax_content wow fadeInUp" data-wow-delay="0.8s">
+                <h1>Chinese Herbal clinic</h1>
+                <button class="hvr-curl-top-left">Services</button>
+                <a href="#about"><img  src="./src/images/herbal.png" alt="down" height="40px" width="40px"></a>
+            </div>
+        </div>
+
+
+  <!-- ABOUT US -->
+        <div class="aboutUs" id="about">
+           <div class="heading wow fadeInLeft">
+            <h1>Something <span>About</span></h1>
+            <h1>Us</h1>
+           </div>
+            <div class="about wow fadeInRight">
+                <ul>
+                    <li>Key points of the clinic. </li>
+                        <li>point 2</li>
+                </ul>
+                   
+
+                <a href="./HTML/about.html"><h4>View More ></h4></a>
+            </div>
+        </div>
+
+
+        <!-- THE STORY -->
+
+        <div class="story">
+            <div class="story_upper">
+                <div class="story_icon wow heartBeat">
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="story_heading">
+                    <h1>Our Services</h1>
+                </div>
+            </div>
+            <div class="story_lower">
+               
+                <div class="story_lowerLow">
+                    
+                    <div class="story_box" >
+                        <div class=" story_box1 glow" data-wow-delay="0.1s">
+                        <!-- <h2>Read More</h2> -->
+                        <img src="./src/images/image 1.jpg" alt="back" height="200px" width="100%">
+                        <h3>treatment 1 </h3>
+                        <h1>About?</h1>
+                        <p>We are experts in providing treatment 1 . </p>
+                        <h4>thank you</h4>
+                    </div>
+                    </div>
+                    <div class="story_box" >
+                        <div class=" story_box1 glow " data-wow-delay="0.2s">
+                        <!-- <h2>Read More</h2> -->
+                        <img src="./src/images/image 2.jpg" alt="back" height="200px"   width="100%">
+                        <h3>treatment 2 </h3>
+                        <h1>About?</h1>
+                        <p>We are experts in providing treatment  2 accurately  </p>
+                        <h4>thank you </h4>
+                    </div>
+                    </div>
+                    <div class="story_box" >
+                        <div class=" story_box1 glow " data-wow-delay="0.3s">
+                        <!-- <h2>Read More</h2> -->
+                        <img src="./src/images/image 3.jpg" alt="back" height="200px"   width="100%">
+                        <h3>treatment 3 </h3>
+                        <h1>About?</h1>
+                        <p>We are experts in providing treatment 3</p>
+                        <h4>take treatment</h4>
+                    </div>
+                    </div>
+                    <div class="story_box" >
+                        <div class=" story_box1 glow " data-wow-delay="0.4s">
+                        <!-- <h2>Read More</h2> -->
+                        <img src="./src/images/image 4.jpg" alt="back" height="200px"  width="100%">
+                        <h3>treatment 4</h3>
+                        <h1>About?</h1>
+                        <p>We are experts in providing treatment 4 </p>
+                        <h4>take medication</h4>
+                    </div>
+                    </div>
+                    <div class="story_box" >
+                        <div class=" story_box1 glow " data-wow-delay="0.4s">
+                        <!-- <h2>Read More</h2> -->
+                        <img src="./src/images/image 5.jpg" alt="back" height="200px"  width="100%">
+                        <h3>treatment 5 </h3>
+                        <h1>About?</h1>
+                        <p>We are experts in providing treatment 5</p>
+                        <h4>take it</h4>
+                    </div>
+                    </div>
+                    <div class="story_box" >
+                        <div class=" story_box1 glow " data-wow-delay="0.4s">
+                        <!-- <h2>Read More</h2> -->
+                        <img src="./src/images/image 5.jpg" alt="back" height="200px"  width="100%">
+                        <h3> treatment 6 </h3>
+                        <h1>About?</h1>
+                        <p>We are experts in providing treatment 6</p>
+                        <h4>use this one</h4>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="slider_left wow fadeInLeft" data-wow-delay="0.6s">
+                <h1>About Doctor<span> Experience</span></h1>
+                <p>The life saver</p>
+                <ul>
+                    <li> Get best treatment
+                        </li>
+                        <li>Best in the city
+                            </li>
+                            <li> At reasonable charges
+                                </li>
+                </ul>
+                <button>Read More</button>
+            </div>
+            <div data-cycle="go" class="cycle slide wow fadeInRight" align="right" data-wow-delay="1s">
+                <div class="cycle-inner">
+                    <div class="item">
+                        <img src="./src/images/image 6.jpg" height="325" width="550">
+                    </div>  
+                    <div class="item">
+                        <img src="./src/images/image 5.jpg" height="325" width="550">
+                    </div>
+                    <div class="item">
+                           <img src="./src/images/image 4.jpg" height="325" width="550">
+                    </div>
+                    <div class="item">
+                           <img src="./src/images/image 3.jpg" height="325" width="550">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+       
+                <!-- PRIVATE EVENT -->
+                <div class="contact_body" id="contact">
+                    <div class="contact_bodyLeft">
+                       <h1>How to reach us</h1>
+                        <div class="privateEvent_book">
+                            <div class="privateEvent_BookInputs">
+                               <table  class="table">
+                                   <tr>
+                                       <td><input class="inp" type="text" placeholder="FIRST NAME"></td>
+                                       <td colspan="2"><input class="inp" type="text" placeholder="LAST NAME"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input class="inp" type="text" placeholder="CITY"></td>
+                                  <td>
+                                      <select class="inpt">
+                                      <option>STATE</option>
+                                      <option>MELBOURNE</option>
+                                      <option>SYDNEY</option>
+                                      <option>UP</option>
+                                      <option>BIHAR</option>
+                                      <option>Mirzapur</option>
+                                      </select>
+                                </td>
+                                    <td><input class="inp" type="text" placeholder="ZIP"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><input class="inp" type="text" placeholder="EMAIL"></td>
+                                </tr>
+                                <td><textarea class="ta" name="" id="" cols="50" rows="10" placeholder="Message"></textarea></td>
+                               </table>
+                               <div class="checkbox">
+                                <input type="checkbox" name="select" id="select">
+                                <label class="label" for="select">Yes,please notify me with updates regarding new events!</label>
+                               </div>
+                               <div class="buttons">
+                                <button type="submit">SUBMIT</button>
+                                <button type="reset">RESET</button>
+                               </div>
+                            </div>
+                           
+                        </div></div>
+                    <div class="contact_bodyRight"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.9117730138573!2d145.08882040436742!3d-37.87469010336419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66bc5d2d17925%3A0x809ed8898f5797bb!2sHolmesglen%20NEIS!5e0!3m2!1sen!2sin!4v1648988113588!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./cycle/src/cycle.min.js"></script>
+    <script src="./owlcarousel/jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
+    <script>
+         wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+     <script>
+         const navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
