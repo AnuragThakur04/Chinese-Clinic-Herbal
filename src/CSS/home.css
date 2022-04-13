@@ -12,13 +12,13 @@ html {
 }
 
 /* HEADER */
-header {
+/* header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 70px;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(12, 180, 76);
   top: 0;
   position: fixed;
   z-index: 999;
@@ -41,6 +41,27 @@ header {
   font-weight: 400;
   font-family: serif;
 }
+.header_center > h4{
+  float: left;
+  border-right: 1px solid #0755cb;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 36px;
+  line-height: 36px;
+  background-color: rgb(18, 166, 15);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+a{
+  display: block;
+  padding: 0 28px;
+  color: rgb(20, 14, 14);
+  text-decoration: none;
+}  
+a:hover, a.active{
+  background-color: rgb(21, 196, 97);
+}
 .header_right {
   display: flex;
   align-items: center;
@@ -51,6 +72,37 @@ header {
   font-weight: 400;
   font-size: 21px;
   color: rgba(0, 0, 0, 0.7);
+} */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+}
+
+.header_center{
+  display: flex;
+  align-items: center;
+}
+.header_center h2{
+  margin-right: 20px;
+}
+.header_right span {
+  margin-right: 20px;
+}
+.header_right button, .story_box button{
+  margin-right: 20px;
+  padding: 2px 50px;
+  border-color: #00c853;
+  border-width: 1px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+}
+.header_right button:hover, .story_box button:hover{
+  color: white;
+  background-color: #00c853;
 }
 .right_content {
   display: flex;
@@ -231,7 +283,7 @@ header {
   justify-content: center;
   flex-direction: column;
   top: 67%;
-  left: 40%;
+  left: 30%;
   z-index: 8;
 }
 .parallax_content > h1 {
@@ -246,12 +298,13 @@ header {
   border-radius: 5px;
   background: transparent;
   color: #fff;
+  border-color: #00c853;
   font-size: 19px;
   margin-top: 20px;
 }
 .parallax_content > button:hover {
   border: none;
-  background-color: #fff;
+  background-color: #00c853;
   color: #111;
 }
 .parallax_content > a > img {
@@ -372,6 +425,19 @@ header {
   display: flex;
   align-items: center;
 }
+.left_img {
+  display: flex;
+  align-items: center;
+}
+.imgg{
+  background-color: white;
+  padding: 5px;
+}
+.imgg img{
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
 .buttons > button {
   display: flex;
   align-items: center;
@@ -380,7 +446,9 @@ header {
   margin-top: 20px;
   padding: 15px 20px;
   width: 200px;
-  background-color: #c29457;
+  background-color: #00c853;
+  border-color: #00c853;
+  border-width: 1px;
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -990,6 +1058,12 @@ header {
     padding: 0% !important;
     margin: 0%;
   }
+  .header_center  a{
+    text-decoration: none;
+    color: green;
+  }
+ 
+
   .header_left-right {
     display: none;
   }
