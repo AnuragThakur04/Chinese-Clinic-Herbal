@@ -75,18 +75,57 @@ a:hover, a.active{
 } */
 .header{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 15px 50px;
+  align-items: center;
+  /* width:100vw; */
+  padding: 0 10px;
+  padding-top:5px;
+  background: url('../images/header.JPG') no-repeat fixed;
+  object-fit: fit;
+  background-color: #f2f7df;
+  height:200px; 
 }
-
+.header_left{
+  background: rgb(255,255,255);
+  /* height: 0px; */
+  background: linear-gradient(90deg, rgba(255,255,255,0.8463760504201681) 0%, rgba(255,255,255,0.7651435574229692) 100%, rgba(255,255,255,0) 100%);
+}
 .header_center{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+}
+.header_center a{
+
+  text-decoration: none;
 }
 .header_center h2{
-  margin-right: 20px;
+  color:rgb(0, 0, 0);
 }
+.header_right {
+  display: flex;
+  align-content: center;
+}
+.header_right a {
+  margin-right: 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+.bookApp{
+  position: absolute;
+  top:18%;
+  right: 8%;
+}
+.header_right a div{
+  display: flex;
+   color: #000;
+  align-content: center;
+  
+}
+.header_right a div h2{}
 .header_right span {
   margin-right: 20px;
 }
